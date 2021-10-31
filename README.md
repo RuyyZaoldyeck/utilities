@@ -7,4 +7,4 @@
     pip install -r requirements.txt
     python -m ipykernel install --user --name=venv
     jupyter kernelspec list
-    jupyter kernelspec uninstall venv```
+    jupyter kernelspec uninstall venv
