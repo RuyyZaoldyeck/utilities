@@ -1,8 +1,9 @@
 # utilities
 
 ## Python code for formatting strings to datetimes using pandas
-``` df['DataFrame Column'] = pd.to_datetime(df['DataFrame Column'], format=specify your format)
+``` 
     formats: %Y - year, %m - month(1), %b - month(Ene), %d - day, %H - hour, %M - minutes, %S - seconds
+    df['DataFrame Column'] = pd.to_datetime(df['DataFrame Column'], format=specify your format)
 ```
 
 ## Python codes for configuring virtual enviroments in jupyter lab
