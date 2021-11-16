@@ -15,3 +15,12 @@
     jupyter kernelspec list
     jupyter kernelspec uninstall venv
 ```
+## Time series checking for spurious correlation by checking percent changes instead of levels
+``` 
+    #correlation of level
+    corr_levels = df1[feature1].corr(df1[feature2])
+    ret = df1.pct_changes()
+    corr_ret = ret[feature1].corr(ret[feature2])
+    print(f'correlation of levels: {corr_levels}')
+    print(f'correlation of changes: {corr_ret}')
+```
