@@ -6,6 +6,12 @@
     df['DataFrame Column'] = pd.to_datetime(df['DataFrame Column'], format=specify your format)
 ```
 
+# Datetime formatting
+``` 
+    now = datetime.now()
+    date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
+```
+
 ## Python codes for configuring virtual enviroments in jupyter lab
 ``` pip install jupyter lab
     python -m venv venv
