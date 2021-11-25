@@ -28,3 +28,9 @@
     print(f'correlation of levels: {corr_levels}')
     print(f'correlation of changes: {corr_ret}')
 ```
+## Importing a custom module and avoiding errors by adding it to the path
+```
+    # importing custom util module from common directory
+    sys.path.insert( 0, os.path.abspath("./common") )
+    import util
+```
