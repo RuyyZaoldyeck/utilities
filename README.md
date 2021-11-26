@@ -10,7 +10,7 @@
     now = datetime.now()
     date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
 ```
-## Python codes for configuring virtual enviroments in jupyter lab
+## Python codes for configuring virtual enviroments in jupyter lab using pip
 ``` pip install jupyter lab
     python -m venv venv
     pip install ipykernel
@@ -18,6 +18,13 @@
     python -m ipykernel install --user --name=venv
     jupyter kernelspec list
     jupyter kernelspec uninstall venv
+```
+## Python codes for configuring virtual enviroments in jupyter lab using conda
+``` 
+    # in anaconda prompt
+    conda activate myvenv
+    ipython kernel install --user --name=<any_name>
+    conda deactivate
 ```
 ## Time series checking for spurious correlation by checking percent changes instead of levels
 ``` 
