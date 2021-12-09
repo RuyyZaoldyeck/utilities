@@ -41,3 +41,12 @@
     sys.path.insert( 0, os.path.abspath("./common") )
     import util
 ```
+## Finding distribution of data using Fitter
+```
+    conda install -c bioconda fitter
+    conda install -c conda-forge easydev
+    from fitter import Fitter, get_common_distributions, get_distributions
+    f = Fitter(data, distributions = get_common_distributions())
+    f.fit()
+    f.summary()
+```
