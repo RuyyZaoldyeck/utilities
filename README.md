@@ -57,4 +57,7 @@
     url = 'https://drive.google.com/uc?id=0B9P1L--7Wd2vNm9zMTJWOGxobkU'
     output = '20150428_collected_images.tgz'
     gdown.download(url, output, quiet=False)
+    
+    url = 'https://drive.google.com/drive/folders/1ivUsJd88C8rl4UpqpxIcdI5YLmRD0Mfj'
+    gdown.download_folder(url, quiet=True, no_cookies=True)
 ```
