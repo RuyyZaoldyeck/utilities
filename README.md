@@ -61,3 +61,12 @@
     url = 'https://drive.google.com/drive/folders/1ivUsJd88C8rl4UpqpxIcdI5YLmRD0Mfj'
     gdown.download_folder(url, quiet=True, no_cookies=True)
 ```
+## Installing a github repo in a conda enviroment
+```
+    conda install git
+    conda intall pip
+    # buscamos el repo y le quitamos la parte de http y agregamos .git al final
+    https://github.com/Netflix/metaflow ---> //github.com/Netflix/metaflow.git
+    #luego en el command colocamos
+    pip install git+git://github.com/yourname/projectname.git
+```
