@@ -70,3 +70,17 @@
     #luego en el command colocamos
     pip install git+git://github.com/yourname/projectname.git
 ```
+## Adding, Listing and removing anaconda kernels
+```
+    #Adding a kernel
+    conda activate my_kernel
+    ipython kernel install --name my-local --user
+    
+    #Listing kernels
+    conda install -c anaconda jupyter
+    jupyter kernelspec list
+    
+    #Removing a kernel
+    jupyter kernelspec remove kernel-name
+    
+```
