@@ -25,6 +25,7 @@
 ``` 
     # in anaconda prompt
     conda activate myvenv
+    conda install -c anaconda ipykernel
     ipython kernel install --user --name=<any_name>
     conda deactivate
 ```
