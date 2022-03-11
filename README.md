@@ -87,3 +87,28 @@
     jupyter kernelspec remove kernel-name
     
 ```
+## SSAS connection using MSOLAP
+``` 
+    # Download ADOMD.net
+    import pandas as pd
+    from sys import path
+    import clr
+    
+    # path al dll que descargaste "Microsoft.AnalysisServices.AdomdClient.dll"
+    clr.AddReference(path)
+
+    string = path
+    path.append(string)
+
+    from Microsoft.AnalysisServices.AdomdClient import AdomdConnection #, AdomdDataAdapter
+    from System.Data import DataSet
+    from pyadomd import Pyadomd
+
+    conn_str = "Provider=MSOLAP;Data Source=<ip>;Initial Catalog=<nombre de la db>;Integrated                           Security=SSPI;Persist Security Info=false;DbpropMsmdFlattened2=true;User Id=<id>;Password=              <pass>;"
+    
+    query = "EVALUATE CONSOLIDADO"
+    with Pyadomd(conn_str) as conn:
+        with conn.cursor().execute(query) as cur:
+            test = cur.fetchall()
+    
+```
