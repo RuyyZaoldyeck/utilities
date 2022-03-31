@@ -7,6 +7,10 @@
     formats: %Y - year, %m - month(1), %b - month(Ene), %d - day, %H - hour, %M - minutes, %S - seconds
     df['DataFrame Column'] = pd.to_datetime(df['DataFrame Column'], format=specify your format)
 ```
+## Python code for renaming dataframe columns
+``` 
+    df.rename(columns={'timestamp': 'x', 'quantity': 'y'}, inplace=True)
+```
 ## Datetime formatting
 ``` 
     now = datetime.now()
