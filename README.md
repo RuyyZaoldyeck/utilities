@@ -2,6 +2,11 @@
 
 ## PENDIENTE CUANDO HAGAS EL SORT_VALUES PORQUE SI LO HACES DIRECTO DEL INDEX SOLO MUEVE EL INDEX Y NO ARRASTRA LAS COLUMNAS CON EL (sortea todo el datafram by la columna que quieras)
 
+## Partial Python code for loading/reading a big file into notebook (instead of using pd.read which allocates the whole)
+``` 
+    import gzip
+```
+
 ## Python code for formatting strings to datetimes using pandas
 ``` 
     formats: %Y - year, %m - month(1), %b - month(Ene), %d - day, %H - hour, %M - minutes, %S - seconds
